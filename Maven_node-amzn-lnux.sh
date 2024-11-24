@@ -27,7 +27,7 @@ source ~/.bash_profile
 echo $PATH
 
 
-##### Create a new user on Maven build server for Jenkins communication
+##### Create a new user on Maven build server ( Worker ) for Jenkins communication
 # List all the existing users
 cat /etc/passwd
 
