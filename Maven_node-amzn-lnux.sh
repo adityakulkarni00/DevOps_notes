@@ -4,6 +4,11 @@
 
 
 sudo su 
+yum update -y
+yum upgrade -y
+hostnamectl set-hostname 'maven-worker'
+exit
+sudo su
 yum install -y git
 yum install -y java-17-amazon-corretto.x86_64
 ls -la
@@ -48,9 +53,7 @@ jenkins ALL=(ALL)     NOPASSWD: ALL
 #### Enable password based authentication
 
 vi /etc/ssh/sshd_config
-
 # Search for PasswordAuthentication
-
 # Uncomment the line
 PasswordAuthentication yes
 
